@@ -1,3 +1,4 @@
+//burger fce
 $(".burger").on('click', function(){
    
     //vysunutí menu
@@ -7,10 +8,11 @@ $(".burger").on('click', function(){
     $(".burger").toggleClass("toggle");
   });
 
-                       
+  // hide content fce                     
   $(document).ready(function(){
 	  $(".content").hide().fadeIn(2000);
 
+	//kotva fce 
 	$('a[href^="#"]').on('click', function (e) {
 		e.preventDefault();
 
