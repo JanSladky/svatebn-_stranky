@@ -146,12 +146,16 @@ img {
     
   }
   .svatebcane {
-    max-width: 260px;
+    max-width: 50%;
     display: inline-block;
+    margin: 10px;
   }
 
   .svatebcane > .button {
     padding: 10px 16px;
+  }
+  .button-osoby {
+    display: block;
   }
 
   
