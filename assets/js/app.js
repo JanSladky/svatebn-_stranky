@@ -24,16 +24,12 @@
 
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top - 75},
-			1000, 'swing', function () {
+			500, 'swing', function () {
 				window.location.hash = target;
 
 		});
 
 	});
-
-	reklama
-	$('#main').addClass("reklama");
-
 
 	//responzivní menu
 	if ($(window).width() < 991) {

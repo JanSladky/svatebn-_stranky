@@ -1,9 +1,16 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
+  position: relative;
   font-family: 'Poiret One', cursive;
   font-weight: 600;
   text-align: center;
   font-size: 100%;
   letter-spacing: 0.1em;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -14,11 +21,12 @@ body {
 .main-container {
   max-width: 1200px;
   margin: auto;
+  overflow-x: hidden;
 }
   
   nav {
     display: flex;
-    position: sticky;
+    position: fixed;
     align-items: center;
     min-height: 3em;
     background: #9A97A1;
@@ -54,7 +62,7 @@ img {
     color: white;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 18px; 
+    font-size: 2em; 
     font-weight: bold;
     
   }
@@ -63,9 +71,7 @@ img {
     margin-bottom: 20px;
     font-size: 3em;
   }
-  .responsive-title {
-    display: none;
-  }
+  
   h2 {
     margin-top: 80px;
     font-size: 2em;
@@ -110,6 +116,7 @@ img {
     cursor: pointer;
     position: absolute;
     right: 30px;
+    top: 15px;
   }
   
   .burger div {
@@ -159,60 +166,12 @@ img {
   }
 
   
-  @media screen and (max-width: 1024px) {
-    .menu {
-      width: 50%;
-    }
-    
+  
+  .responsive-title br {
+    display: none;
   }
   
-  @media screen and (max-width: 1184px) {
-    
-    body {
-      overflow-x: hidden;
-     
-    }
-    .menu {
-      position: absolute;
-      right: 0px;
-      top: 48px;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: #9A97A1;
-      width: 300px;
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
-      padding: 10px;
-    }
-    .menu li {
-      padding: 10px;
-    }
-    .show {
-      transform: translateX(0);
-    }
-    
-    .burger {
-      display: block;
 
-    }
-    
-  }
-  @media screen and (max-width: 735px) {
-    section {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  }
-  @media screen and (max-width: 635px) {
-    .responsive-title {
-      display: block;
-    }
-    .desktop-title {
-      display: none;
-    }
-  }
 
   
   .toggle .left {
@@ -229,3 +188,58 @@ img {
 
 
 /*CONTENT*/
+
+
+/*media q*/
+@media screen and (max-width: 735px) {
+  section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .responsive-title br {
+    display: block;
+  }
+  .logo h4 {
+    font-size: 1.3em; 
+    letter-spacing: 3px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    width: 50%;
+  }
+  
+}
+
+@media screen and (max-width: 1184px) {
+  
+ 
+  .menu {
+    position: absolute;
+    right: -100%;
+    top: 48px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #9A97A1;
+    width: 100%;
+    transition: all 0.5s ease-in;
+    padding: 10px;
+  }
+  .menu li {
+    padding: 10px;
+  }
+  .show {
+    right: 0;
+  }
+  
+  .burger {
+    display: block;
+
+  }
+  
+}
