@@ -11,6 +11,7 @@ body {
   letter-spacing: 0.1em;
   width: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 * {
@@ -150,6 +151,7 @@ img {
   }
   .button a {
     color: #fff;
+    padding: 17px 65px;
   }
   .button a:hover {
     text-decoration: none;
