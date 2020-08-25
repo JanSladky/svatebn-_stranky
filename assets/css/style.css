@@ -209,6 +209,10 @@ img {
   .logo h4 {
     font-size: 1.3em; 
     letter-spacing: 3px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    margin-left: 5px;
   }
   .svatebcane {
     max-width: 100%;
