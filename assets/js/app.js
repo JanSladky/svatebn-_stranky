@@ -16,24 +16,18 @@
 	  });
 
 	//kotva fce 
-		$('a[href^="#"]').on('click', function (e) {
-		e.preventDefault();
 
-		var target = this.hash;
-		var target = $(target);
+	$('.menu li >a').on('click', function (e) {
+		var target = this.hash
 
 		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top - 75},
+			scrollTop: $(target).offset().top - 75}, // můžu nahradit i tímto: .$("konkretni id").height() - tohle dám jen místo toho čísla 75
 			500, 'swing', function () {
-				window.location.hash = target;
+				var stringed = target.toString()
+				var trimmed = stringed.substring(1)
 
+				window.location.hash = '/'+trimmed;
 		});
-
 	});
-
-	//responzivní menu
-	if ($(window).width() < 991) {
-		$('#navbarNavDropdown').addClass('collapse');
-
-	};
+	
 });
