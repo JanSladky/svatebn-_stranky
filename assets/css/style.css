@@ -42,7 +42,12 @@ body {
     max-width: 1200px;
     height: 60px;
     justify-content: space-around;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /*to samé jako margin 0 auto ale nevyhnutelné při absolutním pozicování*/
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    justify-content: flex-start;
   }
 
   iframe {
