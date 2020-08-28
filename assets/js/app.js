@@ -1,7 +1,7 @@
 
 
 
-  // hide content fce                     
+  // hide content funkce                    
   $(document).ready(function(){
 	  $(".content").hide().fadeIn(2000);
 	  
