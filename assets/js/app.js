@@ -1,7 +1,7 @@
 
 
 
-  // hide content funkce                    
+  // schování contentu                   
   $(document).ready(function(){
 	  $(".content").hide().fadeIn(2000);
 	  
