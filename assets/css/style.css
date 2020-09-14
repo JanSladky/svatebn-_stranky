@@ -43,16 +43,30 @@ body {
     height: 60px;
     justify-content: space-around;
     /* margin: 0 auto; */
-    /*to samé jako margin 0 auto ale nevyhnutelné při absolutním pozicování*/
+    /*to samé jako margin 0 auto ale nevyhnutelné při absolutním pozicován*/
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     justify-content: flex-start;
   }
 
-  iframe {
-    margin: 30px;
-  }
+  
+  
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -105,8 +119,12 @@ img {
   .menu {
     display: flex;
     list-style-type: none;
-    padding-left: 200px;
+    padding-left: 100px;
     
+    color: white;
+  }
+  .logo a {
+    text-decoration: none;
     color: white;
   }
   
@@ -209,38 +227,7 @@ img {
 
 
 /*media q*/
-@media screen and (max-width: 735px) {
-  section {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-@media screen and (max-width: 635px) {
-  .responsive-title br {
-    display: block;
-  }
-  .logo h4 {
-    font-size: 1.3em; 
-    letter-spacing: 3px;
-    position: absolute;
-    left: 10px;
-    top: 12px;
-    margin-left: 5px;
-  }
-  .svatebcane {
-    max-width: 100%;
-    margin: 20px 0;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .menu {
-    width: 50%;
-  }
-  
-}
-
-@media screen and (max-width: 1184px) {
+@media screen and (max-width: 1205px) {
   
   nav {
     justify-content: start;
@@ -276,3 +263,50 @@ img {
   }
   
 }
+@media screen and (max-width: 1024px) {
+  .menu {
+    width: 50%;
+  }
+  
+}
+@media (max-width: 800px) {
+  .column {
+  flex: 80%;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 735px) {
+  section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .responsive-title br {
+    display: block;
+  }
+  .logo h4 {
+    font-size: 1.3em; 
+    letter-spacing: 3px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    margin-left: 5px;
+  }
+  .svatebcane {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+  flex: 100%;
+  max-width: 100%;
+}
+
+
+
+
+
