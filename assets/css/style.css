@@ -274,7 +274,7 @@ img {
   flex: 80%;
   max-width: 50%;
 }
-
+}
 @media screen and (max-width: 735px) {
   section {
     margin-left: 10px;
@@ -301,12 +301,8 @@ img {
 }
 
 @media (max-width: 600px) {
-  .column {
-  flex: 100%;
-  max-width: 100%;
+    .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
-
-
-
-
-
